@@ -17,6 +17,7 @@ public class GoogleFooterLinks {
 		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\rakib\\workspace\\WebAutomation1004\\drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://Google.com");
+<<<<<<< HEAD
 		Thread.sleep(2000);
 		driver.manage().window().maximize();
 		System.out.println(driver.getCurrentUrl());
@@ -71,6 +72,13 @@ public class GoogleFooterLinks {
 		Thread.sleep(5000);
 		driver.close();
 		
+=======
+		
+		driver.findElement(By.xpath("//*[@id=\"fsr\"]/a[1]")).click();
+		String url = "https://youtu.be/ggoJFaE71W8";
+		driver.get(url);
+		driver.get("http://Google.com");
+>>>>>>> 1a21a0a6d39b54abfc31e6086f1d3a76dc164b29
 		
 		
 			
